@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — Chemarome Official Store</title>
+<meta name="description" content="Chemarome Official Store — komposisi wewangian untuk parfum, perawatan tubuh, pewangi rumah tangga, dan industri.">
+<meta name="theme-color" content="#542078">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="cart">
+<header id="site-header"></header>
+<section class="page-title"><div class="container"><div class="crumbs"><a href="index.html">Home</a> / <a href="cart.html">Keranjang</a> / Checkout</div><h1>Checkout</h1><p>Lengkapi data pengiriman dan pilih metode pembayaran.</p></div></section><main class="section"><div class="container" id="coMain"><form id="coForm" class="co-wrap" novalidate style="display:none"><div>
+<div class="panel"><h3>Data Pelanggan</h3><div class="form-grid"><div class="field"><label for="name">Nama pelanggan</label><input id="name" autocomplete="name" placeholder="Nama lengkap"><span class="err" id="e-name"></span></div>
+<div class="field"><label for="wa">Nomor WhatsApp</label><input id="wa" type="tel" autocomplete="tel" placeholder="0812xxxxxxxx"><span class="err" id="e-wa"></span></div>
+<div class="field span2"><label for="addr">Alamat lengkap</label><textarea id="addr" rows="3" autocomplete="street-address" placeholder="Jalan, nomor, kecamatan, kota, provinsi, kode pos"></textarea><span class="err" id="e-addr"></span></div>
+<div class="field span2"><label for="note">Catatan (opsional)</label><input id="note" placeholder="Contoh: kirim sore hari"></div></div></div>
+<div class="panel"><h3>Pilihan Pengiriman</h3><div class="opts" id="shipOpts"></div></div>
+<div class="panel"><h3>Metode Pembayaran</h3><div class="opts two" id="payOpts"></div><p class="note">Ini versi simulasi. Pembayaran belum terhubung otomatis dengan bank atau payment gateway; konfirmasi dilakukan lewat WhatsApp.</p></div></div>
+<aside class="summary"><h3>Ringkasan Pesanan</h3><div class="sum-list" id="sumList"></div><div class="row"><span>Subtotal</span><span id="sSub"></span></div><div class="row"><span>Pengiriman</span><span id="sShip"></span></div><div class="row total"><span>Total Pembayaran</span><span id="sTotal"></span></div><button class="btn btn-primary btn-block btn-lg" type="submit" style="margin-top:14px">Place Order</button></aside></form></div></main>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="modal-box"><h2 id="mt">Pesanan dibuat</h2><p>No. pesanan <b id="mId"></b></p><p>Total pembayaran <b id="mTotal"></b></p><div id="mPay"></div><div class="note">Simulasi tugas: tidak ada pembayaran yang diproses. Kirim detail pesanan ke WhatsApp toko untuk konfirmasi.</div><p style="margin-top:18px;display:grid;gap:10px"><a class="btn btn-wa btn-lg" id="mWa" target="_blank" rel="noopener">Kirim Detail via WhatsApp</a><a class="btn btn-ghost" href="index.html">Kembali ke Beranda</a></p></div></div>
+<footer id="site-footer"></footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/checkout.js"></script>
+</body>
+</html>
